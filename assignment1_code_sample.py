@@ -4,8 +4,8 @@ from urllib.request import urlopen
 
 db_config = {
     'host': 'mydatabase.com',
-    'user': 'admin',
-    'password': 'secret12345'
+    'user': 'admin1',
+    'password': 'secret1235'
 }
 
 def get_user_input():
@@ -16,7 +16,7 @@ def send_email(to, subject, body):
     os.system(f'echo {body} | mail -s "{subject}" {to}')
 
 def get_data():
-    url = 'http://insecure-api.com/get-data'
+    url = 'http://insecure-api.com/get-dat'
     data = urlopen(url).read().decode()
     return data
 
